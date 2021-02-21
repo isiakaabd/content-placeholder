@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #ECF0F1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* image in the header */
+/* general image */
+img {
+    max-width: 100%;
+}
+.card-header{
+    height: 200px;
+}
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 30px;
+    text-align: justify;
+    background-color: #FFFFFF
+}
+.card-title{
+    height:15px;
+    margin: 0;
+    color: #000;
+}
+
+.author{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.card-details{
+color: #777;
+margin: 10px 0 20px;
+font-weight: 200;
+
+
+}
+.profile-image{
+width: 50px;
+height: 50px;
+border-radius:50%;
+overflow: hidden;
+margin-right: 15px;
+
+}
+
+.author-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+ #name {
+    
+    margin-bottom: 5px;
+}
+ #date{
+    color: #C4AFAA;
+    
+}
+.animated-bg {
+    background: linear-gradient(
+        to right,
+        #f6f7f8 0%,
+        #edeef1 10%,
+        #f6f7f8 20%,
+        #f6f7f8 100%
+    );
+    background-size: 200%, 100%;
+    animation: Pos 1s infinite;
+}
+
+.animated-bg-text {
+    border-radius: 50px;
+    display: inline-block;
+    margin:0;
+    min-height: 12px;
+    width: 100%;
+}
+
+
+@keyframes Pos {
+    0% {
+      background-position: 50% 0;
+    }
+  
+    100% {
+      background-position: -150% 0;
+    }
+  }
